@@ -1,5 +1,6 @@
 %h1= @post.title
 %p= @post.link
+%p= @post.user.name
 %p= @post.description
 
 = link_to "Edit", edit_post_path(@post)
