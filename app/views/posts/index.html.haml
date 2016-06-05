@@ -1,1 +1,6 @@
-%h1 Placeholder for Index
+- @posts.each do |post|
+	%h1= link_to post.title, post
+	%p= post.link
+	%p= post.description
+
+	= link_to "Add new inspiration", new_post_path(@post)
