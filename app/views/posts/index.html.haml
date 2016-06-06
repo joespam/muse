@@ -5,5 +5,11 @@
 	%p
 		= post.comments.count
 		comments
-		
+	%p
+		= post.get_upvotes.size
+		likes
+	%p
+		= post.get_downvotes.size
+		dislikes
+
 	= link_to "Add new inspiration", new_post_path(@post)
