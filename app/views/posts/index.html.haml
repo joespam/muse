@@ -2,6 +2,8 @@
 	= link_to (image_tag post.image.url(:small))
 	%h1= link_to post.title, post
 	%p= post.link
-	%p= post.description
-
+	%p
+		= post.comments.count
+		comments
+		
 	= link_to "Add new inspiration", new_post_path(@post)

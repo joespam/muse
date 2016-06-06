@@ -30,6 +30,7 @@ class PostsController < ApplicationController
 	end
 
 	def show
+		@comments = Comment.where(post_id: @post)
 	end
 
 	def update
